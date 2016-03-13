@@ -12,7 +12,7 @@ with(gapowerfeb,
      plot(strptime(paste(Date, Time), format="%d/%m/%Y %H:%M:%S"),
           as.numeric(Sub_metering_1), 
           ylab="Energy Sub Metering",
-          xlab="Sub metering 1",
+          xlab="",
           type="l")
 )
 
@@ -20,7 +20,6 @@ with(gapowerfeb,
      lines(strptime(paste(Date, Time), format="%d/%m/%Y %H:%M:%S"),
           as.numeric(Sub_metering_2), 
           col="red",
-          xlab="Sub_metering_2",
           type="l")
 )
 
@@ -28,7 +27,6 @@ with(gapowerfeb,
      lines(strptime(paste(Date, Time), format="%d/%m/%Y %H:%M:%S"),
            as.numeric(Sub_metering_3), 
            col="blue",
-           xlab="Sub_metering_3",
            type="l")
 )
 
